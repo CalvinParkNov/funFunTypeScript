@@ -66,6 +66,19 @@ let myUser: User1 = {
   isActive: false,
 };
 
+type cardNumber = {
+  cardNumber: string;
+};
+
+type cardDate = {
+  cardDate: string;
+};
+
+type cardDetails = cardNumber &
+  cardDate & {
+    cvv: number;
+  };
+
 myUser.email = "h@gmail.com";
 
 export {};
